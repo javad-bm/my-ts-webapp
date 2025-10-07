@@ -1,0 +1,21 @@
+{
+  "name": "my-ts-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --sourcemap --outfile=public/app.js --servedir=public --serve=localhost:3000",
+    "build": "esbuild src/main.ts --bundle --minify --outfile=public/app.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "keycloak-js": "^26.2.0"
+  }
+}
