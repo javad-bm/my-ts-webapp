@@ -3,7 +3,7 @@ import Keycloak from "keycloak-js";
 // Update these to match your Keycloak
 const kc = new Keycloak({
   url: "http://localhost:8080", // base URL (no trailing slash ok)
-  realm: "Javad Behrouzi Org",
+  realm: "JBM",
   clientId: "test-web-app",
 });
 
